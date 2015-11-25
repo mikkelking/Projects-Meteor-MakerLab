@@ -12,6 +12,7 @@ const Routes = (
 		<Route path='home' component={Home} />
 		<Route path='project' component={Project} />
 		<Route path='team' component={Team} />
+		<Route path='login' component={Login} />
 		<IndexRoute component={Home} />
 	</Route>
 		//顶级 <Route/> 中包含多个子 <Route/>,通过 <IndexRoute /> 来指定默认项。
