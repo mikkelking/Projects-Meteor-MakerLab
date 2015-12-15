@@ -27,7 +27,10 @@ izzilab:material-ui
 npm-container
 reactrouter:react-router
 
-qnub:accounts-react-material-ui
 
 fourseven:scss
 
+accounts-password
+accounts-ui
+softwarerero:accounts-t9n
+accounts-base

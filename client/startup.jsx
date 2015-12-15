@@ -9,11 +9,12 @@ const createHistory = ReactRouter.history.useQueries(ReactRouter.history.createH
 
 const Routes = (
 	<Route path='/' component={App}>
+		<IndexRoute component={Home} />
 		<Route path='home' component={Home} />
 		<Route path='project' component={Project} />
 		<Route path='team' component={Team} />
-		<Route path='login' component={Login} />
-		<IndexRoute component={Home} />
+		<Route path='login' component={Login} />	
+		<Route path='user' component={User} />		
 	</Route>
 		//顶级 <Route/> 中包含多个子 <Route/>,通过 <IndexRoute /> 来指定默认项。
 );
@@ -23,5 +24,5 @@ Meteor.startup(function () {
   		<Router history={createHistory}>
   			{Routes}
   		</Router>
-	), document.getElementById('container'));
+	), document.getElementById('content'));
 });
